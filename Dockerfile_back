@@ -34,9 +34,6 @@ EXPOSE 8501
 # Command to run the application
 CMD ["streamlit", "run", "./webui/Main.py","--browser.serverAddress=127.0.0.1","--server.enableCORS=True","--browser.gatherUsageStats=False"]
 
-#API
-EXPOSE 8080
-CMD ["python3", "main.py"]
 # 1. Build the Docker image using the following command
 # docker build -t moneyprinterturbo .
 
